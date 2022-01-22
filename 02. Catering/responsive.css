@@ -1,0 +1,38 @@
+/* tablet */
+@media all and (min-width: 641px) and (max-width: 1007px) {
+
+}
+
+
+/* desktop */
+@media all and (min-width: 1008px) {
+
+}
+
+
+
+@media all and (max-width: 600px) {
+    .w3-right {
+        display: none;
+    }
+
+    #about .w3-image {
+        display: none;
+    }
+
+    .w3-col.m6 {
+        width: 100%;
+    }
+
+    .w3-col.l6 {
+        width: 100%;
+    }
+    
+    .w3-padding-large {
+        padding: 0px 24px;
+    }
+
+    .w3-text-grey {
+        width: 100%;
+    }
+}
