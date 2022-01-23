@@ -1,0 +1,49 @@
+
+1.	Explain what is HTML:
+
+HTML(HyperText Markup Language). 
+Markup language for describing web pages. A markup language is a set of markup tags. HTML documents contain HTML tags and plain text. The tags describe document content. Tags elements can have attributes. Attributes provide additional information about HTML elements. Attributes are always specified in the start tag. Attributes come in name/value pairs.
+
+
+
+2.	Explain what is CSS:
+
+CSS stands for Cascading Style Sheets.
+Styles define the visual presentation of HTML elements. Separation between semantic content and visual presentation can be achieved. External visual style quide shared across all pages of your site. Change the style guide – change all pages visual presentation. Every CSS document is a collection of CSS rules. CSS rule has two main parts: selector and one or more declarations. Each declaration consists of a property and a value.
+
+
+
+3.	Explain what is JavaScript:
+
+JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It has application programming interfaces (API) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+JavaScript allows you to implement complex features of a web page - every time a web page does more than just sit there and show statistics to watch - it shows content updates, interactive maps, animated 2D / 3D graphics, scrolling video jukeboxes, etc. 
+JavaScript engines were originally used only in web browsers, but are now core components of some servers and a variety of applications. The most popular runtime system for this usage is Node.js.
+
+
+
+4.	Explain how the browser is loading and processing a web page:
+
+When you type a web address into your browser:
+The browser goes to the DNS server, and finds the real address of the server that the website lives on.
+The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client. This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.
+If the server approves the client's request, the server sends the client a "200 OK" message, which means "Of course you can look at that website! Here it is", and then starts sending the website's files to the browser as a series of small chunks called data packets (the shop gives you your goods, and you bring them back to your house).
+The browser assembles the small chunks into a complete web page and displays it to you.
+
+When browsers send requests to servers for HTML files, those HTML files often contain <link> elements referencing external CSS stylesheets and <script> elements referencing external JavaScript scripts. It’s important to know the order in which those files are parsed by the browser as the browser loads the page:
+The browser parses the HTML file first, and that leads to the browser recognizing any <link>-element references to external CSS stylesheets and any <script>-element references to scripts.
+As the browser parses the HTML, it sends requests back to the server for any CSS files it has found from <link> elements, and any JavaScript files it has found from <script> elements, and from those, then parses the CSS and JavaScript.
+The browser generates an in-memory DOM tree from the parsed HTML, generates an in-memory CSSOM structure from the parsed CSS, and compiles and executes the parsed JavaScript.
+As the browser builds the DOM tree and applies the styles from the CSSOM tree and executes the JavaScript, a visual representation of the page is painted to the screen, and the user sees the page content and can begin to interact with it.
+
+
+
+5.	Explain how events work in JavaScript:
+
+Events are actions or occurrences that happen in the system you are programming, which the system tells you about so your code can react to them.
+To react to an event, I attach an event handler to it. This is a block of code (usually a JavaScript function that I as a programmer create) that runs when the event fires. When such a block of code is defined to run in response to an event, we say we are registering an event handler. 
+Note: Event handlers are sometimes called event listeners — they are pretty much interchangeable for our purposes, although strictly speaking, they work together. The listener listens out for the event happening, and the handler is the code that is run in response to it happening.
+Event registration is done by providing a callback function.
+The recommended mechanism for adding event handlers in web pages is the addEventListener() method:
+Inside the addEventListener() function, we specify two parameters: the name of the event we want to register this handler for, and the code that comprises the handler function we want to run in response to it.
+Events work as follows: 
+JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window.
