@@ -1,0 +1,15 @@
+/* tablet */
+@media all and (min-width: 641px) and (max-width: 1007px) {
+    
+}
+
+
+/* desktop */
+@media all and (min-width: 1008px) {
+    .header-nav-list {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+
